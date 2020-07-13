@@ -1,4 +1,5 @@
 ### Run below commands to see the magic of Ansible
+- Run these commands from Ansible controller to all Agent nodes or with specific name of the node.
 
 ```ansible
 ansible all -m ping
