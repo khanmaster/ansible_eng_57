@@ -1,4 +1,21 @@
-# install sql with playbook
+### Run below commands to see the magic of Ansible
+
+```ansible
+ansible all -m ping
+ansible aws -m ping
+ansible all -a "uname -a"
+
+ansible all -a "date"
+ansible all -a "free -a"
+ansible all -a "free -a"
+```
+There are plenty more Ad-hoc commands available on Ansible
+``` doc page
+https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html```
+```
+
+
+## install sql with playbook
 
 ```ansible
 
