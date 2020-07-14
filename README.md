@@ -1,3 +1,26 @@
+## setting up ssh connection
+
+```ansible
+##### Inside Agent Machines [Each One]
+
+$cd etc/ssh
+- $sudo nano sshd_config
+	- Make PermitRootLogin yes
+	- Make PasswordAuthentication yes
+- $sudo service ssh restart
+- $sudo passwd root
+	- Enter new password: "Vagrant"
+
+##### Back Inside Ansible Machine
+
+
+- $cd /home/vagrant/.ssh
+- $ssh-copy-id root@[Agent IP]
+	- Enter password
+- Attempt login with `ssh 'root@[Agent IP]'`
+- login with ssh vagrant@agent-ip-address
+```
+
 ### Run below commands to see the magic of Ansible
 - Run these commands from Ansible controller to all Agent nodes or with specific name of the node.
 
