@@ -7,11 +7,12 @@ $cd etc/ssh
 - $sudo nano sshd_config
 	- Make PermitRootLogin yes
 	- Make PasswordAuthentication yes
-- $sudo service ssh restart
-- $sudo passwd root
-	- Enter new password: "Vagrant"
-
-##### Back Inside Ansible Machine
+-  sudo systemctl restart ssh
+- sudo su -a 
+- passwd 
+	- Enter new password: "vagrant"
+        ( you can set anypassword you liek)
+##### Back Inside Ansible Controller Machine
 
 
 - $cd /home/vagrant/.ssh
